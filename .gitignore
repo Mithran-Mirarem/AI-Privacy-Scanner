@@ -1,0 +1,36 @@
+if (!(Test-Path ".gitignore")) {
+@'
+# Flutter / Dart
+**/.dart_tool/
+**/build/
+**/coverage/
+**/android/.gradle/
+**/ios/Pods/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+
+# Python
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Training artifacts
+**/runs/
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Path ".gitignore" -Encoding utf8
+}

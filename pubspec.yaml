@@ -1,0 +1,26 @@
+name: ai_privacy_scanner_review2
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.7 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.12.0+2
+  tflite_flutter: ^0.12.1
+  image: ^4.10.1
+  sensors_plus: ^7.1.1
+  wifi_scan: ^0.4.1+3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/labels.txt
+    - assets/models/privacy_scanner.tflite
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0

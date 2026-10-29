@@ -1,0 +1,5 @@
+camera
+cctv
+hidden_camera
+spy_camera
+spy_lens

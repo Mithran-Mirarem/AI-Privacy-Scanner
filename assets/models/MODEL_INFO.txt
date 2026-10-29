@@ -1,0 +1,5 @@
+Model asset: privacy_scanner.tflite
+Source: user's exported YOLOv8n V2 TFLite checkpoint (best_v2.tflite).
+Input expected by app: [1, 640, 640, 3].
+Output decoder expects YOLOv8-style detection tensor with 4 box coordinates followed by 5 class scores.
+The app checks the input tensor shape on startup and shows a diagnostic error if the model export differs.
